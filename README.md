@@ -1,11 +1,18 @@
-# Offline Voice Assistant
+# OfflineVoiceAssistantV2
 
-Android project for GitHub Actions.
+نسخه اولیه پروژه دستیار صوتی اندروید.
 
-## Build on GitHub
-1. Upload all files to a GitHub repository.
-2. Open **Actions**.
-3. Run **Build APK** (or push to `main`).
-4. When the workflow succeeds, open the run and download the artifact **OfflineVoiceAssistant-debug**.
+## امکانات فعلی
+- رابط ساده دستیار صوتی
+- تشخیص گفتار فارسی با Speech Recognizer خود اندروید
+- تعریف نام مستعار برای نام پکیج برنامه‌ها یا شماره تلفن
+- اجرای برنامه با نام مستعار
+- باز کردن شماره در شماره‌گیر با نام مستعار
 
-The workflow pins Gradle to 8.10.2 instead of relying on whatever Gradle version happens to be installed on the runner.
+## ساخت APK
+1. Android Studio را باز کنید.
+2. Open را بزنید و پوشه `OfflineVoiceAssistantV2` را انتخاب کنید.
+3. صبر کنید Gradle Sync تمام شود.
+4. از منوی Build گزینه Generate App Bundles or APKs > Generate APKs را بزنید.
+
+نکته: این نسخه هنوز wake word دائمی و اجرای کامل در پس‌زمینه را پیاده‌سازی نکرده است. برای آن باید سرویس foreground و موتور تشخیص wake word اضافه شود.
